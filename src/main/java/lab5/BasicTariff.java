@@ -3,14 +3,14 @@ package lab5;
 import lombok.Getter;
 
 @Getter
-public class Tariff {
+public class BasicTariff {
     private final String name = "Basic tariff";
     private final Double gigabytesOfInternet = 10.0;
     private final Double timeOfCalls = 300.0;
     private final Double price = 220.0;
     private final String nameOfSubscriber;
 
-    public Tariff(String nameOfSubscriber){
+    public BasicTariff(String nameOfSubscriber){
         if (nameOfSubscriber==null || nameOfSubscriber.isBlank()){
             throw new IllegalArgumentException("Subscriber name cannot be empty");
         }

@@ -1,10 +1,9 @@
 package lab5;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-public class BusinessTariff extends Tariff {
+public class BusinessTariff extends BasicTariff {
     private final String name = "Business tariff";
     private final Double gigabytesOfInternet = 40.0;
     private final Double timeOfCalls = 400.0;
