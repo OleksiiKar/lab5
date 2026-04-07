@@ -1,5 +1,7 @@
 package lab5;
 
+import lombok.NonNull;
+
 import java.util.*;
 
 public class Main {
@@ -26,7 +28,7 @@ public class Main {
         max = scanner.nextDouble();
         searchSuitableTariff(tariffList, min, max);
     }
-    public static void searchSuitableTariff(List<Tariff> items, Double min, Double max){
+    public static void searchSuitableTariff(@NonNull List<Tariff> items, Double min, Double max){
         List<Tariff> suitableTariffs = new ArrayList<>();
         for(Tariff a:items){
             if (a.getPrice() >= min && a.getPrice() <= max) {
@@ -37,7 +39,7 @@ public class Main {
             System.out.println("Something suitable to this range is not found");
         } else {printObj(suitableTariffs);}
     }
-    public static void printObj(List<Tariff> items){
+    public static void printObj(@NonNull List<Tariff> items){
         for(Tariff a:items){
             System.out.println(a.getName()+":"+a.getPrice());
         }
