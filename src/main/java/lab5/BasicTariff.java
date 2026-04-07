@@ -3,7 +3,7 @@ package lab5;
 import lombok.Getter;
 
 @Getter
-public class BasicTariff {
+public class BasicTariff implements Tariff {
     private final String name = "Basic tariff";
     private final Double gigabytesOfInternet = 10.0;
     private final Double timeOfCalls = 300.0;
