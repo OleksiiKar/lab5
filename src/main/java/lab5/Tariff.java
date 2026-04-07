@@ -1,4 +1,11 @@
 package lab5;
 
-public interface Tariff {
+import lombok.Getter;
+
+@Getter
+public abstract class Tariff {
+    private String name;
+    private Double gigabytesOfInternet;
+    private Double timeOfCalls;
+    private Double price;
 }
