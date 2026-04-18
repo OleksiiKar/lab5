@@ -81,3 +81,4 @@ Business tariff:400.0
 ---
 
 ## Відео роботи програми
+https://youtu.be/qhhi_GZZa8k
